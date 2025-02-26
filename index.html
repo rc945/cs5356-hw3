@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ryan Chen's Homepage">
+    <meta property="og:title" content="Ryan Chen's Website">
+    <meta property="og:description" content="A fun and interactive homepage built for Building Startup Systems.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://rc945.github.io/cs5356-hw3/">
+    
+    <title>Ryan Chen's Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D5NTQZ65F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5D5NTQZ65F');
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Circus</h1>
+    </header>
+
+    <section class="bio">
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>Hi, I'm Ryan, a student in Building Startup Systems.</p>
+    </section>
+
+    <section class="interactive">
+        <h2>I'M A CLOWN!</h2>
+        <button id="getJoke">Get a Joke</button>
+        <p id="jokeText">Click the button for a joke!</p>
+    </section>
+
+    <section class="details">
+        <details>
+            <summary>More About Me</summary>
+            <p>I am a CS student and I believe the job market is great right now!</p>
+        </details>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

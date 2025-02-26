@@ -1,0 +1,112 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('background.jpg') fixed;
+    background-size: 150% 150%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.bio img {
+    width: 150px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 10px gray);
+}
+
+.interactive, .details {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 3px solid gold;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
+    border-color: white;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+    color: white;
+}
+
+summary {
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: gold;
+    transition: color 0.3s ease;
+}
+
+#jokeText {
+    font-size: 2em;
+    color: white;
+    padding: 15px;
+    border: 3px solid gold;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+    .bio img {
+        width: 100px;
+    }
+}
